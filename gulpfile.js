@@ -1,7 +1,7 @@
 'use strict';
 
 let gulp = require('gulp'),
-    apiProxy = require('gulp-api-proxy'),
+    proxy = require('http-proxy-middleware'),
     connect = require('gulp-connect'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
@@ -50,10 +50,13 @@ gulp.task('serve', function () {
         livereload: true,
         // api proxy middleware
         middleware: function (conn, opts) {
-            opts.route = '/rest';
-            opts.context = '127.0.0.1:8080/rest';
-            var proxy = new apiProxy(opts);
-            return [proxy]
+            var restProxy = proxy('/rest', {
+                target: 'http://127.0.0.1:8080',
+                // for vhosted sites, changes host header to match to target's host
+                changeOrigin: true,
+                logLevel: 'debug'
+            });
+            return [restProxy]
         }
     });
 });
