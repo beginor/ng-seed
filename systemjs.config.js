@@ -28,7 +28,7 @@
     },
     packages: {
       'rxjs': { defaultExtension: 'js' },
-      'app': { main: 'main.js', defaultExtension: 'js', format: 'amd' }
+      'app': { main: 'main.js', defaultExtension: 'js', format: 'cjs' }
     }
   });
 })(this);
