@@ -18,7 +18,7 @@ gulp.task('tsc', function () {
     var proj = tsc.createProject('tsconfig.json');
     gulp.src(ts)
         .pipe(sourcemaps.init())
-        .pipe(tsc(proj))
+        .pipe(proj())
         .js
         .pipe(sourcemaps.write(root))
         .pipe(gulp.dest(dist))
