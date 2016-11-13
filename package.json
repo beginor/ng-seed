@@ -4,12 +4,10 @@
   "description": "angular 2 seed app",
   "main": "index.html",
   "scripts": {
-    "dev": "gulp dev",
-    "prebuild": "rm -rf dist",
+    "prebuild": "npm run clean",
     "build": "gulp build",
-    "start": "npm run dev",
-    "prestart": "npm run build",
-    "clean": "rm -rf node_modules typings dist"
+    "start": "gulp dev",
+    "clean": "rm -rf dist"
   },
   "repository": {
     "type": "git",
