@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 
 @Component({
+    moduleId: module.id,
     selector: 'home',
-    templateUrl: 'dist/components/home/home.component.html'
+    templateUrl: 'home.component.html'
 })
 export class HomeComponent {
 
     message = 'Hello, Angular 2 !';
 
     onClick() {
-        this.message = 'You have clicked!';
+        this.message = 'You have clicked Me !';
     }
 
 }
