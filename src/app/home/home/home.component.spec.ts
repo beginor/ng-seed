@@ -32,23 +32,23 @@ describe('HomeComponent', () => {
     }));
 
     it(`should has a message equals 'Hello, Angular !'`, async(() => {
-        expect(target.message).toEqual('Hello, Angular !');
+        expect(target.vm.message).toEqual('Hello, Angular !');
     }));
 
     it(`should has count equals 0`, async(() => {
-        expect(target.count).toEqual(0);
+        expect(target.vm.count).toEqual(0);
     }));
 
     it(`should increase count onClick`, async(() => {
-        expect(target.count).toEqual(0);
+        expect(target.vm.count).toEqual(0);
         target.onClick();
-        expect(target.count).toBeGreaterThan(0);
+        expect(target.vm.count).toBeGreaterThan(0);
     }));
 
     it(`should change message onClick`, async(() => {
-        expect(target.message).toEqual('Hello, Angular !');
+        expect(target.vm.message).toEqual('Hello, Angular !');
         target.onClick();
-        expect(target.message).toContain('You have clicked');
+        expect(target.vm.message).toContain('You have clicked');
     }));
 
     it(`should has a button`, async(() => {
