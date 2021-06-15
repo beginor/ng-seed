@@ -6,7 +6,7 @@
       "rules": {
         "max-len": ["warn"],
         "quotes": ["warn", "single"],
-        "brace-style": ["warn", "1tbs", { "allowSingleLine": true }],
+        "brace-style": ["warn", "stroustrup", { "allowSingleLine": true }],
         "@typescript-eslint/ban-types": ["off"],
         "@typescript-eslint/explicit-member-accessibility": [
           "warn",
