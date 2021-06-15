@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-// tslint:disable: max-line-length
+/* eslint-disable max-len */
 const routes: Routes = [];
-// tslint:enable: max-line-length
+/* eslint-enable max-len */
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { environment } from '../environments/environment';
 
-// tslint:disable: max-line-length
+/* eslint-disable max-len */
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     {
@@ -15,7 +15,7 @@ const routes: Routes = [
         loadChildren: () => import('./about/about.module').then(m => m.AboutModule)
     }
 ];
-// tslint:enable: max-line-length
+/* eslint-enable max-len */
 
 @NgModule({
     imports: [

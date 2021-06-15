@@ -28,12 +28,13 @@ describe('AppComponent', () => {
         expect(component).toBeTruthy();
     });
 
-    it(`should have as title 'handset'`, () => {
+    it('should have as title \'handset\'', () => {
         expect(component.title).toEqual('handset');
     });
 
     it('should render title', () => {
         const element = fixture.nativeElement;
+        // eslint-disable-next-line max-len
         expect(element.querySelector('.content span').textContent).toContain('handset app is running!');
     });
 });
