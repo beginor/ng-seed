@@ -4,8 +4,11 @@
     {
       "files": ["*.ts"],
       "rules": {
-        "max-len": ["warn"],
         "quotes": ["warn", "single"],
+        "no-console": ["warn", { "allow": ["error"] }],
+        "no-debugger": ["warn"],
+        "no-alert": ["warn"],
+        "max-len": ["warn"],
         "brace-style": ["warn", "stroustrup", { "allowSingleLine": true }],
         "@typescript-eslint/ban-types": ["off"],
         "@typescript-eslint/explicit-member-accessibility": [
