@@ -13,7 +13,7 @@
     "build-handset": "NG_PERSISTENT_BUILD_CACHE=1 ng build handset --configuration production",
     "watch-web": "NG_PERSISTENT_BUILD_CACHE=1 ng build web --watch --configuration development",
     "watch-handset": "NG_PERSISTENT_BUILD_CACHE=1 ng build handset --watch --configuration development",
-    "lint": "ng lint",
+    "lint": "NG_PERSISTENT_BUILD_CACHE=1 ng lint",
     "start": "npm run watch-web"
   },
   "repository": {
