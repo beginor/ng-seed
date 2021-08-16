@@ -7,7 +7,26 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "skipTests": true
+        },
+        "@schematics/angular:class": {
+          "skipTests": true
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true
+        },
+        "@schematics/angular:guard": {
+          "skipTests": true
+        },
+        "@schematics/angular:interceptor": {
+          "skipTests": true
+        },
+        "@schematics/angular:pipe": {
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true
         },
         "@schematics/angular:application": {
           "strict": true
@@ -97,24 +116,6 @@
             "browserTarget": "web:build"
           }
         },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/web/src/test.ts",
-            "polyfills": "projects/web/src/polyfills.ts",
-            "tsConfig": "projects/web/tsconfig.spec.json",
-            "karmaConfig": "projects/web/karma.conf.js",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/web/src/favicon.ico",
-              "projects/web/src/assets"
-            ],
-            "styles": [
-              "projects/web/src/styles.scss"
-            ],
-            "scripts": []
-          }
-        },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
@@ -128,6 +129,33 @@
     },
     "app-shared": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss",
+          "skipTests": true
+        },
+        "@schematics/angular:class": {
+          "skipTests": true
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true
+        },
+        "@schematics/angular:guard": {
+          "skipTests": true
+        },
+        "@schematics/angular:interceptor": {
+          "skipTests": true
+        },
+        "@schematics/angular:pipe": {
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true
+        },
+        "@schematics/angular:library": {
+          "name": "app-shared"
+        }
+      },
       "root": "projects/app-shared",
       "sourceRoot": "projects/app-shared/src",
       "prefix": "lib",
@@ -147,14 +175,6 @@
           },
           "defaultConfiguration": "production"
         },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/app-shared/src/test.ts",
-            "tsConfig": "projects/app-shared/tsconfig.spec.json",
-            "karmaConfig": "projects/app-shared/karma.conf.js"
-          }
-        },
         "lint": {
           "builder": "@angular-eslint/builder:lint",
           "options": {
@@ -170,7 +190,26 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "skipTests": true
+        },
+        "@schematics/angular:class": {
+          "skipTests": true
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true
+        },
+        "@schematics/angular:guard": {
+          "skipTests": true
+        },
+        "@schematics/angular:interceptor": {
+          "skipTests": true
+        },
+        "@schematics/angular:pipe": {
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true
         },
         "@schematics/angular:application": {
           "strict": true
@@ -258,24 +297,6 @@
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "handset:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/handset/src/test.ts",
-            "polyfills": "projects/handset/src/polyfills.ts",
-            "tsConfig": "projects/handset/tsconfig.spec.json",
-            "karmaConfig": "projects/handset/karma.conf.js",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              "projects/handset/src/favicon.ico",
-              "projects/handset/src/assets"
-            ],
-            "styles": [
-              "projects/handset/src/styles.scss"
-            ],
-            "scripts": []
           }
         },
         "lint": {
