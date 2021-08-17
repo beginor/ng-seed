@@ -44,9 +44,9 @@
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4",
     "@angular/localize": "~12.2.0",
-    "bootstrap": "^4.6.0",
+    "bootstrap": "^5.1.0",
     "bootstrap-icons": "^1.5.0",
-    "@ng-bootstrap/ng-bootstrap": "^10.0.0",
+    "@ng-bootstrap/ng-bootstrap": "^11.0.0-beta.2",
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@angular/cdk": "~12.2.0",
     "@angular/material": "~12.2.0"
