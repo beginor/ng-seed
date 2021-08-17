@@ -1,4 +1,5 @@
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+  <div class="container-fluid">
   <a class="navbar-brand" routerLink="/">
     <svg-icon path="bi/app-indicator" iconClass="bi-lg"></svg-icon>
     Angular App Seed
@@ -9,15 +10,15 @@
     aria-label="切换导航">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="navbar-collapse" [class.collapse]="collapsed"
-    [class.d-flex]="!collapsed">
+  <div [ngbCollapse]="collapsed" class="collapse navbar-collapse">
     <ul class="navbar-nav">
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink="/home">Home</a>
+        <a class="nav-link" routerLink="/home" (click)="collapsed = true">Home</a>
       </li>
       <li class="nav-item" routerLinkActive="active">
-        <a class="nav-link" routerLink="/about">About</a>
+        <a class="nav-link" routerLink="/about" (click)="collapsed = true">About</a>
       </li>
     </ul>
+  </div>
   </div>
 </nav>
