@@ -5,16 +5,16 @@
   "main": "src/index.html",
   "scripts": {
     "clean": "rm -rf dist out-tsc",
-    "ngcc": "NG_PERSISTENT_BUILD_CACHE=1 ngcc",
+    "ngcc": "NG_PERSISTENT_BUILD_CACHE=1 ngcc --create-ivy-entry-points",
     "ng": "NG_PERSISTENT_BUILD_CACHE=1 ng",
-    "build": "npm run build-shared && npm run build-web && npm run build-handset",
+    "build": "pnpm run build-shared && pnpm run build-web && pnpm run build-handset",
     "build-shared": "NG_PERSISTENT_BUILD_CACHE=1 ng build app-shared --configuration production",
     "build-web": "NG_PERSISTENT_BUILD_CACHE=1 ng build web --configuration production",
     "build-handset": "NG_PERSISTENT_BUILD_CACHE=1 ng build handset --configuration production",
     "watch-web": "NG_PERSISTENT_BUILD_CACHE=1 ng build web --watch --configuration development",
     "watch-handset": "NG_PERSISTENT_BUILD_CACHE=1 ng build handset --watch --configuration development",
     "lint": "NG_PERSISTENT_BUILD_CACHE=1 ng lint",
-    "start": "npm run watch-web"
+    "start": "pnpm run watch-web"
   },
   "repository": {
     "type": "git",
