@@ -1,3 +1,5 @@
+> This repository is archived, please move to [ng-seed-app](https://github.com/beginor/ng-seed-app)
+
 # Angular Seed App
 
 Seed project build with [Angular](https://angular.io/), [Font Awesome](https://fontawesome.com/) and [ng-bootstrap](https://ng-bootstrap.github.io/) .
